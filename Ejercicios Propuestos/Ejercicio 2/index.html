@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>Formulario de Registro</h2>
+    <div class="container">
+        <form action="/al_informe" method="POST">
+            <div class="fill" id="form-nombre">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required minlength="2" max="50" placeholder="Ingresar Nombres"/>
+            </div>
+            <div class="fill" id="form-apellido">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required minlength="2" maxlength="50" placeholder="Ingresar Apellidos"/>
+            </div>
+            <div class="fill" id="form-nacimiento">
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha" required/>
+            </div>
+            <div class="fill" id="form-email">
+                <label for="nombre_de_usuario">Correo electronico:</label>
+                <input type="email" id="email" name="email" required/>
+            </div>
+            <div class="fill" id="form-password">
+                <label for="contraseña">Ingrese su Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" required minlength="8"/>
+            </div>
+            <div class="send" id="form-button">
+                <input type="submit" value="Crear Cuenta" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

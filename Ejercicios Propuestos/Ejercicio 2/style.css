@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2 {
+    text-align: center;
+    margin: 10px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+form {
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+form div.fill {
+    display: flex;
+    margin-bottom: 10px;
+}
+form div.send {
+    display: flex;
+    justify-content: center;
+}
+form div.fill label {
+    width: 70px;
+    text-align: justify;
+    margin-right: 10px;
+}
+form div input {
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+form div.fill input {
+    width: 250px;
+    padding-left: 5px;
+}
+input:focus {
+    border-color: #000;
+}
