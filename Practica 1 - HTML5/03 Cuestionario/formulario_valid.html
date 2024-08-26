@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Contacto</h1>
+            <form action="/al_informe" method="post">
+                <!-- Campo para ingresar nombre -->
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="1" maxlength="50" placeholder="Ingresar nombre">
+                </div>
+                <!-- Campo para ingresar correo electronico -->
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required placeholder="ejemplo@dominio.com">
+                </div>
+                 <!-- Campo para ingresar mensaje -->
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" rows="4" required minlength"10" placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+                <!-- boton -->
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
