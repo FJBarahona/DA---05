@@ -1,0 +1,15 @@
+/* Quitar el espacio entre las celdas */
+table {
+    border-collapse: collapse;
+}
+
+/* Borde a los encaebzador y filas */
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+/* Aplicar borde solo a la sexta columna */
+td:nth-child(6) {
+    border-left: 4px solid #C1437A;
+}
