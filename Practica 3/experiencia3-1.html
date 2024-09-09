@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 10px;
+  background-color: rgb(14, 26, 38);
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: rgb(201, 212, 204);
+  border: 5px solid rgb(232, 228, 207);
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.grid-item:hover {
+  background-color: rgb(124, 166, 162);
+  transform: scale(1.1);
+}
+
+</style>
+</head>
+<body>
+
+<h1>Experiencia 3</h1>
+<p>En la siguiente experiencia se vera todo lo relacionado con Grid.</p>
+
+<div class="grid-container">
+  <div class="grid-item">Ene</div>
+  <div class="grid-item">Feb</div>
+  <div class="grid-item">Mar</div>  
+  <div class="grid-item">Abr</div>
+  <div class="grid-item">May</div>
+  <div class="grid-item">Jun</div>  
+  <div class="grid-item">Jul</div>
+  <div class="grid-item">Ago</div> 
+</div>
+</body>
+</html>

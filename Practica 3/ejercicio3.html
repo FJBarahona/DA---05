@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página de Postres</title>
+<style>
+  body {
+    margin: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .header {
+    background-color: rgb(240, 146, 125);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(245, 192, 179);
+    padding: 10px;
+  }
+
+  .menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .gallery-item {
+    background-color: rgb(245, 192, 179);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .gallery-item img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+}
+
+  .gallery-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+
+  .gallery-item p {
+    margin: 0;
+  }
+
+  @media (max-width: 480px) {
+    .menu {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .menu a {
+      padding: 15px;
+      text-align: center;
+      width: 100%;
+    }
+    
+    .gallery {
+      grid-template-columns: 1fr; 
+    }
+    
+  }
+
+  @media (min-width: 481px) and (max-width: 900px) {
+    .menu {
+      flex-direction: row;
+    }
+
+    .menu a {
+      padding: 10px 20px;
+    }
+    
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>Página de postres</h1>
+  </div>
+  <div class="menu">
+    <a href="#home">Inicio</a>
+    <a href="#services">Servicios</a>
+    <a href="#contact">Contacto</a>
+  </div>
+ 
+  <div class="content">
+    <h2>Galería de Postres</h2>
+    <p>Descubre nuestra deliciosa exposición de postres.</p>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="tarta.jpeg" alt="Tarta de Fresa">
+        <h3>Tarta de Fresa</h3>
+        <p>Una tarta fresca con fresa natural y crema.</p>
+      </div>
+      <div class="gallery-item">
+        <img src="cheesecake.jpeg" alt="Cheesecake">
+        <h3>Cheesecake</h3>
+        <p>Delicioso cheesecake con base de galleta.</p>
+      </div>
+      <div class="gallery-item">
+        <img src="brownies.jpeg" alt="Brownies">
+        <h3>Brownies</h3>
+        <p>Brownies de chocolate intensos y esponjosos.</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

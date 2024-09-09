@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: lightgray;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: black;
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  img {
+    border: 5px solid darkblue;
+  }
+  p {
+    font-size: 16px;
+    color: navy;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  body {
+    background-color: lightgreen;
+  }
+  img {
+    border: 5px solid green;
+  }
+  p {
+    font-size: 20px;
+    color: darkgreen;
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 901px) {
+  body {
+    background-color: orange;
+  }
+  img {
+    border: 5px solid red;
+  }
+  p {
+    font-size: 22px;
+    color: darkred;
+  }
+}
+</style>
+</head>
+<body>
+
+<img src="./canada.jpg" alt="canada" width="460" height="345">
+<p>Se realiza la experiencia 3, que permite visualizar como la imagen escalara segun la resolucion de la pantalla</p>
+</body>
+</html>

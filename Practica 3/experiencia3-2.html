@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: Manzana; }
+.item2 { grid-area: Pera; }
+.item3 { grid-area: Fresa; }
+.item4 { grid-area: Mandarina; }
+.item5 { grid-area: Naranja; }
+.item6 { grid-area: Lucuma; }
+.item7 { grid-area: Platano; }
+
+.grid-container {
+  display: grid; 
+  grid-template-areas:
+    'Manzana Mandarina Mandarina Pera Pera Fresa'
+    'Manzana Mandarina Mandarina Pera Pera Fresa'
+    'Platano Platano Lucuma Lucuma Naranja Naranja'
+    'Platano Platano Lucuma Lucuma Naranja Naranja'
+    'Platano Platano Lucuma Lucuma Naranja Naranja';
+  grid-gap: 10px;
+  background-color: rgb(62, 45, 89);
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgb(203, 193, 222);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS GRID-AREAS</h1>
+
+<p>Se utiliza y prueba las areas de Grid.</p>
+
+<div class="grid-container">
+  <div class="item1">Manzana</div>
+  <div class="item2">Pera</div>
+  <div class="item3">Fresa</div>  
+  <div class="item4">Mandarina</div>
+  <div class="item5">Naranja</div>
+  <div class="item6">Lucuma</div>
+  <div class="item7">Platano</div>
+</div>
+
+</body>
+</html>
