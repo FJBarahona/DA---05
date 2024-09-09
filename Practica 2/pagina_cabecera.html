@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS en cabecera</title>
+    <style>
+        header {
+            background-color: #263a54;
+            color: rgb(255, 255, 255);
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <div class="container">
+            <h1>Viajes y Aventuras</h1>
+            <p>Descubre los destinos más emocionantes del mundo</p>
+        </div>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <section id="destinos" class="container">
+            <h2>Destinos Destacados</h2>
+            <article class="destination">
+                <img src="rockies.jpg" alt="Vista de las Montañas Rocosas en Canadá">
+                <div>
+                    <h3>Montañas Rocosas, Canadá</h3>
+                    <p>Explora las majestuosas Montañas Rocosas con sus imponentes picos y abundante vida silvestre.
+                        Perfecto para senderismo, esquí y fotografía.</p>
+                </div>
+            </article>
+            <article class="destination">
+                <img src="safari.jpg" alt="Elefantes en la sabana de Kenia">
+                <div>
+                    <h3>Safari en Kenia</h3>
+                    <p>Sumérgete en una aventura salvaje en Kenia, hogar del safari más emocionante de África. Observa
+                        leones, elefantes y más en su hábitat natural.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección del blog -->
+        <section id="blog" class="container">
+            <h2>Últimas Entradas del Blog</h2>
+            <article class="blog-post">
+                <h3>5 Consejos para Viajar de Forma Económica</h3>
+                <p>Descubre cómo ahorrar dinero mientras exploras el mundo sin sacrificar la experiencia. <a
+                        href="#">Leer más</a></p>
+            </article>
+            <article class="blog-post">
+                <h3>Las Mejores Mochilas para Aventureros</h3>
+                <p>Una revisión completa de las mochilas más resistentes y cómodas para tus aventuras al aire libre. <a
+                        href="#">Leer más</a></p>
+            </article>
+        </section>
+
+        <!-- Sección de galería de fotos -->
+        <section id="galeria" class="container">
+            <h2>Galería de Aventuras</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="adventure1.jpg" alt="Escalada en roca">
+                    <figcaption>Escalada en las Montañas Rocosas</figcaption>
+                </figure>
+                <figure>
+                    <img src="adventure2.jpg" alt="Buceo en el Caribe">
+                    <figcaption>Buceo en las aguas cristalinas del Caribe</figcaption>
+                </figure>
+                <figure>
+                    <img src="adventure3.jpg" alt="Senderismo en la Patagonia">
+                    <figcaption>Senderismo en los espectaculares paisajes de la Patagonia</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section id="contacto" class="container">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.</p>
+            <form action="submit_form.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Viajes y Aventuras. Todos los derechos reservados.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript para la interacción -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>

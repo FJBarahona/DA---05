@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes y Aventuras</title>
+    <link rel="stylesheet" href="./regex.css" s>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Viajes y Aventuras</h1>
+            <p>Destinos más emocionantes del mundo</p>
+        </div>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <section id="destinos" class="container">
+            <h2>Destinos Destacados</h2>
+            <article class="destination">
+                <div>
+                    <h3>Montañas Rocosas, Canadá</h3>
+                    <img src="canada.jpg" alt="Vista de las Montañas Rocosas en Canadá" class="imagen">
+                    <p>Las Montañas Rocosas Canadienses: Un Paraíso Natural
+                        Las Montañas Rocosas canadienses son una cadena montañosa que se extiende por las provincias
+                        de Alberta y Columbia Británica. Conocidas por sus impresionantes picos nevados, lagos
+                        cristalinos,
+                        bosques exuberantes y una rica vida silvestre, las Rocosas son un destino popular para los
+                        amantes
+                        de la naturaleza y los aventureros.</p>
+                        <h3> ¿Qué hace tan especiales a las Rocosas Canadienses? </h3>
+                        <div>
+                            <ul>
+                                <li>Paisajes espectaculares: Desde glaciares brillantes hasta valles verdes, 
+                                    las Rocosas ofrecen una variedad de paisajes que cambian constantemente 
+                                    a medida que te adentras en la cordillera.</li>
+                                <li>Actividades al aire libre: Las Rocosas ofrecen innumerables oportunidades para 
+                                    practicar senderismo, escalada, esquí, kayak, rafting y camping.</li>
+                                <li>Parques nacionales: La región cuenta con varios parques nacionales, como Banff y
+                                     Jasper, que protegen esta maravilla natural y ofrecen una amplia gama de servicios para los visitantes.</li>
+                            </ul>
+                        </div>
+                </div>
+            </article>
+            <article class="destination">
+                <img src="barrera.jpg" alt="Barrera de Coral en Australia">
+                <div>
+                    <h3>Gran Barrera de coral en AUSTRALIA</h3>
+                    <p>Sumérgete en una aventura salvaje en Kenia, hogar del safari más emocionante de África. Observa
+                        leones, elefantes y más en su hábitat natural.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section id="contacto" class="container">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.</p>
+            <form action="submit_form.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Viajes y Aventuras.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript para la interacción -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>

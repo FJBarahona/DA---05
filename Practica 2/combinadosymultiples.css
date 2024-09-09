@@ -1,0 +1,64 @@
+/* Selector de descendiente */
+div p {
+    color: blue;
+}
+
+/* Selector de hijo */
+ul > li {
+    font-weight: bold;
+}
+
+/* Selector de hermano adyacente */
+h1 + p {
+    font-size: 18px;
+}
+
+/* Selector de hermanos generales */
+h1 ~ p {
+    margin-top: 10px;
+}
+
+/* Selector de atributo */
+input[type="text"] {
+    border: 1px solid #000;
+}
+
+/* Selector de pseudo-clase de enlace */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Selector de pseudo-elemento */
+p::first-line {
+    font-style: italic;
+}
+
+
+
+
+/* Aplicando el mismo estilo a varios elementos */
+h1, h2, h3 {
+    color: red;
+}
+
+/* Aplicando el mismo estilo a diferentes clases */
+.btn, .link, .nav-item {
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+/* Selector combinado con clases */
+.card, .box {
+    border-radius: 5px;
+}
+
+/* Múltiples clases con un solo estilo */
+.highlight, .active, .selected {
+    background-color: yellow;
+}
+
+/* Múltiples tipos de elementos */
+header, footer, main {
+    margin: 0;
+    padding: 0;
+}

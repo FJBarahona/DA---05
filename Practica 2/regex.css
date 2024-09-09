@@ -1,0 +1,24 @@
+/* Selector de atributo que empieza con */
+a[href^="https"] {
+    color: green;
+}
+
+/* Selector de atributo que termina con */
+img[src$=".png"] {
+    border: 2px solid #ccc;
+}
+
+/* Selector de atributo que contiene */
+div[class*="error"] {
+    color: red;
+}
+
+/* Selector de atributo que coincide */
+input[type="password"] {
+    background-color: #f0f0f0;
+}
+
+/* Selector de atributo que no coincide */
+input:not([type="submit"]) {
+    border: 1px dashed #ddd;
+}

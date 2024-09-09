@@ -1,0 +1,42 @@
+/* Selector básico heredado */
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+/* Herencia con clases */
+.container {
+    color: #333;
+}
+
+.container p {
+    font-size: 16px; /* Inherita el color de .container */
+}
+
+/* Herencia con elementos */
+ul {
+    list-style-type: square;
+}
+
+ul li {
+    font-weight: bold; /* Inherita el estilo de lista de ul */
+}
+
+/* Herencia de encabezados */
+article h1 {
+    font-size: 24px;
+}
+
+article p {
+    line-height: 1.5; /* Inherita la fuente y color de body */
+}
+
+/* Herencia con ID */
+#main-content {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+#main-content h2 {
+    color: #000; /* Inherita el background y padding de #main-content */
+}
