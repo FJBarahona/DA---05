@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Grid con Flexbox</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column; /* Apilar elementos verticalmente */
+            align-items: center; /* Centrar horizontalmente */
+            height: 100vh; /* Altura del viewport */
+            margin: 0; /* Eliminar márgenes */
+            padding: 0; /* Eliminar padding */
+            box-sizing: border-box; /* Incluir padding y border en el tamaño total del elemento */
+            background-color: rgb(233, 208, 139);
+        }
+        .header {
+            text-align: center; /* Centrar texto en el header */
+            margin-bottom: 20px; /* Espacio debajo del header */
+            padding: 0 20px; /* Espacio lateral */
+            max-width: 100%; /* Asegura que el padding no cause desbordamiento */
+            box-sizing: border-box; /* Incluir padding en el tamaño total del elemento */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(7, 100px);
+            gap: 10px;
+            margin: 0 auto;
+        }
+        .item img {
+            width: 90%;
+            height: 90%;
+            object-fit: contain; /* Para que la imagen no se recorte */
+        }
+        .item {
+            border: 2px solid rgb(48, 47, 47);
+            display: flex; /* Activar Flexbox */
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(189, 186, 186);
+        }
+        .item1 {
+            grid-column: 1 / 3;
+            grid-row: 1 / 3;
+        }
+        .item2 {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+        .item3 {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+        .item4 {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+        .item5 {
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Bienvenido a Outfitter</h1>
+        <p>
+            ¡Descubre la moda que marca la diferencia! 🌟👗
+            En Outfitter, ofrecemos una selección exclusiva de ropa que combina estilo, calidad y comodidad. Desde las últimas tendencias en moda hasta clásicos atemporales, cada pieza está diseñada para resaltar tu personalidad y hacerte sentir increíble. ¡Visítanos y transforma tu guardarropa con lo mejor en moda! Porque no es solo ropa, es tu estilo de vida. 🚀✨
+        </p>
+    </div>
+    <div class="grid-container">
+        <div class="item item1">
+            <img src="Imagen_1.jpg">
+        </div>
+        <div class="item item2">
+            <img src="Imagen_2.jpg">
+        </div>
+        <div class="item item3">
+            <img src="Imagen_3.jpg">
+        </div>
+        <div class="item item4">
+            <img src="Imagen_4.jpg">
+        </div>
+        <div class="item item5">
+            <img src="Imagen_5.jpg">
+        </div>
+    </div>
+</body>
+</html>
