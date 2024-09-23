@@ -1,0 +1,38 @@
+@import 'variables';
+@import 'mixins';
+@import 'functions';
+
+body {
+    font-family: $font-family;
+    font-size: $font-size-base;
+    background-color: $secondary-color;
+    color: custom-darken($primary-color, 10%); // Usa custom-darken
+    margin: 0;
+    padding: $spacing-unit * 2;
+}
+
+.button {
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: $spacing-unit;
+    border: none;
+    @include border-radius(5px);
+    @include transition(background-color, 0.3s);
+    
+    &:hover {
+        background-color: custom-darken($secondary-color, 10%); // Usa custom-darken
+    }
+}
+
+
+.header {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: $spacing-unit * 5;
+    text-align: center;
+    @include box-shadow(0, 2px, 10px, rgba(0, 0, 0, 0.2));
+    
+    h1 {
+        font-size: 2em;
+    }
+}

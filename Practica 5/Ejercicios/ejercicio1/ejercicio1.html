@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Personal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .header {
+    background-color: rgb(191, 102, 0);
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    }
+
+    .about {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .portfolio img {
+      width: 100%;
+      height: auto;
+    }
+
+    .contact {
+      background-color: #f8f9fa;
+      padding: 50px 0;
+    }
+
+    .social-icons a {
+      margin: 0 15px;
+      color: #495057;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Bienvenido a Mi Portafolio</h1>
+      <p>Hola, soy Franz, estudiante de ingenieria de sistemas.</p>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+            <img src="./Foto perfil.png" class="rounded-circle" alt="Foto de perfil" width="200" height="200">
+        </div>
+        <div class="col-md-8">
+          <h2>Acerca de mí</h2>
+          <p>Soy un estudiante que esta cursando el sexto semestre de la carrera de ingenieria de sistemas en la Universidad Catolica de Santa María.</p>
+          <h3>Habilidades</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Java</li>
+            <li class="list-group-item">Python</li>
+            <li class="list-group-item">HTML</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <div class="container">
+      <h2 class="text-center">Mis Proyectos</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./FIGURA 4.jpg" class="card-img-top" alt="Proyecto 1" width="350" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Mesa Automatizada</h5>
+              <p class="card-text">El presente proyecto realizado, es una mesa Automatizada para clientela VIP en restaurantes, para lo cuál se implementó una mesa con distintas funciones y mejoras que permitirán tener una experiencia más expecial para los clientes.</p>
+              <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2 class="text-center">Contáctame</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Tu mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+      <div class="text-center social-icons mt-4">
+        <h5>Sígueme en mis redes sociales</h5>
+        <a href="https://wa.me/941203154" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="https://www.facebook.com/jonathan.barahonacahuana.7/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

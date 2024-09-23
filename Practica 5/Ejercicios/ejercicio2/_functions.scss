@@ -1,0 +1,7 @@
+@function custom-darken($color, $amount) {
+    @return darken($color, $amount); 
+}
+
+@function custom-lighten($color, $amount) {
+    @return lighten($color, $amount); 
+}

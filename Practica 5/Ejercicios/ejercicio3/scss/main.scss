@@ -1,0 +1,19 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: $secondary-color;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    color: $primary-color;
+}

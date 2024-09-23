@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #6c757d;
+}
+
+.carousel-inner img {
+  width: 250px;
+  height: 300px;
+}
+
+.navbar-brand img {
+  width: 150px; 
+  height: auto; 
+}
+
+h2 {
+  color: #007bff;
+}
